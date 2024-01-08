@@ -1,0 +1,12 @@
+# requirements.txt
+
+# Kivy dependencies
+kivy==2.1.0
+
+# KivyMD dependencies
+kivymd==0.104.2
+
+#python and anvil
+requests==2.26.0
+pillow==8.4.0
+anvil-uplink
