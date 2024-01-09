@@ -1,5 +1,5 @@
 import sqlite3
-
+import anvil
 from kivy.lang import Builder
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.screenmanager import Screen
@@ -149,6 +149,7 @@ class LoginScreen(Screen):
         entered_password = self.ids.password.text
         print(entered_email)
         print(entered_password)
+        anvil.name(entered_email,entered_password)
         if not entered_email or "@" not in entered_email or "." not in entered_email:
             self.show_error_dialog("Invalid email address")
             return
