@@ -1,4 +1,3 @@
-import sqlite3
 import anvil
 from kivy.lang import Builder
 from kivy.uix.boxlayout import BoxLayout
@@ -141,7 +140,7 @@ class LoginScreen(Screen):
         # Handle checkbox state change
         # Update password visibility based on the checkbox state
         if hasattr(self, 'login_screen'):
-            self.login_screen.ids.password.password = not value
+            self.login_screen.ids.password.password = not value # type: ignore
             print(value)
 
     def go_to_dashboard(self):

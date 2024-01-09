@@ -25,7 +25,7 @@ class MyApp(MDApp):
         sm.current = 'MainScreen'
 
         # Set the screen manager for the login screen
-        main_screen.app = self
+        main_screen.app = self # type: ignore
 
         return sm
 
