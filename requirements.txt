@@ -11,4 +11,3 @@ requests==2.26.0
 pillow==8.4.0
 anvil-uplink
 
-
