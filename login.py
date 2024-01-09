@@ -147,7 +147,8 @@ class LoginScreen(Screen):
     def go_to_dashboard(self):
         entered_email = self.ids.email.text
         entered_password = self.ids.password.text
-
+        print(entered_email)
+        print(entered_password)
         if not entered_email or "@" not in entered_email or "." not in entered_email:
             self.show_error_dialog("Invalid email address")
             return
